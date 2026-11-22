@@ -1,0 +1,1390 @@
+{
+  "records": [
+    {
+      "index": 1,
+      "material_group": "فلزی",
+      "size_label": "1 اینچ",
+      "inner_d": 25.4,
+      "C": 100.0
+    },
+    {
+      "index": 2,
+      "material_group": "فلزی",
+      "size_label": "1.5 اینچ",
+      "inner_d": 38.1,
+      "C": 100.0
+    },
+    {
+      "index": 3,
+      "material_group": "فلزی",
+      "size_label": "2 اینچ",
+      "inner_d": 50.8,
+      "C": 100.0
+    },
+    {
+      "index": 4,
+      "material_group": "فلزی",
+      "size_label": "2.5 اینچ",
+      "inner_d": 63.5,
+      "C": 100.0
+    },
+    {
+      "index": 5,
+      "material_group": "فلزی",
+      "size_label": "3 اینچ",
+      "inner_d": 76.2,
+      "C": 100.0
+    },
+    {
+      "index": 6,
+      "material_group": "فلزی",
+      "size_label": "4 اینچ",
+      "inner_d": 101.6,
+      "C": 100.0
+    },
+    {
+      "index": 7,
+      "material_group": "فلزی",
+      "size_label": "6 اینچ",
+      "inner_d": 152.4,
+      "C": 100.0
+    },
+    {
+      "index": 8,
+      "material_group": "فلزی",
+      "size_label": "8 اینچ",
+      "inner_d": 203.2,
+      "C": 100.0
+    },
+    {
+      "index": 9,
+      "material_group": "فلزی",
+      "size_label": "10 اینچ",
+      "inner_d": 254.0,
+      "C": 100.0
+    },
+    {
+      "index": 10,
+      "material_group": "فلزی",
+      "size_label": "12 اینچ",
+      "inner_d": 304.8,
+      "C": 100.0
+    },
+    {
+      "index": 11,
+      "material_group": "فلزی",
+      "size_label": "14 اینچ",
+      "inner_d": 355.6,
+      "C": 100.0
+    },
+    {
+      "index": 12,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "40 میلی‌متر",
+      "inner_d": 35.4,
+      "C": 140.0
+    },
+    {
+      "index": 13,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "50 میلی‌متر",
+      "inner_d": 44.2,
+      "C": 140.0
+    },
+    {
+      "index": 14,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "63 میلی‌متر",
+      "inner_d": 55.8,
+      "C": 140.0
+    },
+    {
+      "index": 15,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "75 میلی‌متر",
+      "inner_d": 66.4,
+      "C": 140.0
+    },
+    {
+      "index": 16,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "90 میلی‌متر",
+      "inner_d": 79.8,
+      "C": 140.0
+    },
+    {
+      "index": 17,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "110 میلی‌متر",
+      "inner_d": 97.4,
+      "C": 140.0
+    },
+    {
+      "index": 18,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "125 میلی‌متر",
+      "inner_d": 110.8,
+      "C": 140.0
+    },
+    {
+      "index": 19,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "140 میلی‌متر",
+      "inner_d": 124.0,
+      "C": 140.0
+    },
+    {
+      "index": 20,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "160 میلی‌متر",
+      "inner_d": 141.8,
+      "C": 140.0
+    },
+    {
+      "index": 21,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "180 میلی‌متر",
+      "inner_d": 159.6,
+      "C": 140.0
+    },
+    {
+      "index": 22,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "200 میلی‌متر",
+      "inner_d": 177.2,
+      "C": 140.0
+    },
+    {
+      "index": 23,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "225 میلی‌متر",
+      "inner_d": 199.4,
+      "C": 140.0
+    },
+    {
+      "index": 24,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "250 میلی‌متر",
+      "inner_d": 221.6,
+      "C": 140.0
+    },
+    {
+      "index": 25,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "280 میلی‌متر",
+      "inner_d": 248.2,
+      "C": 140.0
+    },
+    {
+      "index": 26,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "315 میلی‌متر",
+      "inner_d": 279.2,
+      "C": 140.0
+    },
+    {
+      "index": 27,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "355 میلی‌متر",
+      "inner_d": 314.8,
+      "C": 140.0
+    },
+    {
+      "index": 28,
+      "material_group": "پلی اتیلن PE63\n(PN6)",
+      "size_label": "400 میلی‌متر",
+      "inner_d": 354.6,
+      "C": 140.0
+    },
+    {
+      "index": 29,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "40 میلی‌متر",
+      "inner_d": 34.0,
+      "C": 140.0
+    },
+    {
+      "index": 30,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "50 میلی‌متر",
+      "inner_d": 42.6,
+      "C": 140.0
+    },
+    {
+      "index": 31,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "63 میلی‌متر",
+      "inner_d": 53.6,
+      "C": 140.0
+    },
+    {
+      "index": 32,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "75 میلی‌متر",
+      "inner_d": 63.8,
+      "C": 140.0
+    },
+    {
+      "index": 33,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "90 میلی‌متر",
+      "inner_d": 76.6,
+      "C": 140.0
+    },
+    {
+      "index": 34,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "110 میلی‌متر",
+      "inner_d": 93.8,
+      "C": 140.0
+    },
+    {
+      "index": 35,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "125 میلی‌متر",
+      "inner_d": 106.6,
+      "C": 140.0
+    },
+    {
+      "index": 36,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "140 میلی‌متر",
+      "inner_d": 119.4,
+      "C": 140.0
+    },
+    {
+      "index": 37,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "160 میلی‌متر",
+      "inner_d": 136.4,
+      "C": 140.0
+    },
+    {
+      "index": 38,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "180 میلی‌متر",
+      "inner_d": 153.4,
+      "C": 140.0
+    },
+    {
+      "index": 39,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "200 میلی‌متر",
+      "inner_d": 170.6,
+      "C": 140.0
+    },
+    {
+      "index": 40,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "225 میلی‌متر",
+      "inner_d": 191.8,
+      "C": 140.0
+    },
+    {
+      "index": 41,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "250 میلی‌متر",
+      "inner_d": 213.2,
+      "C": 140.0
+    },
+    {
+      "index": 42,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "280 میلی‌متر",
+      "inner_d": 238.8,
+      "C": 140.0
+    },
+    {
+      "index": 43,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "315 میلی‌متر",
+      "inner_d": 268.6,
+      "C": 140.0
+    },
+    {
+      "index": 44,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "355 میلی‌متر",
+      "inner_d": 302.8,
+      "C": 140.0
+    },
+    {
+      "index": 45,
+      "material_group": "پلی اتیلن PE63\n(PN8)",
+      "size_label": "400 میلی‌متر",
+      "inner_d": 341.2,
+      "C": 140.0
+    },
+    {
+      "index": 46,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "40 میلی‌متر",
+      "inner_d": 32.6,
+      "C": 140.0
+    },
+    {
+      "index": 47,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "50 میلی‌متر",
+      "inner_d": 40.8,
+      "C": 140.0
+    },
+    {
+      "index": 48,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "63 میلی‌متر",
+      "inner_d": 51.4,
+      "C": 140.0
+    },
+    {
+      "index": 49,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "75 میلی‌متر",
+      "inner_d": 61.4,
+      "C": 140.0
+    },
+    {
+      "index": 50,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "90 میلی‌متر",
+      "inner_d": 73.6,
+      "C": 140.0
+    },
+    {
+      "index": 51,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "110 میلی‌متر",
+      "inner_d": 90.0,
+      "C": 140.0
+    },
+    {
+      "index": 52,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "125 میلی‌متر",
+      "inner_d": 102.2,
+      "C": 140.0
+    },
+    {
+      "index": 53,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "140 میلی‌متر",
+      "inner_d": 114.6,
+      "C": 140.0
+    },
+    {
+      "index": 54,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "160 میلی‌متر",
+      "inner_d": 130.8,
+      "C": 140.0
+    },
+    {
+      "index": 55,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "180 میلی‌متر",
+      "inner_d": 147.2,
+      "C": 140.0
+    },
+    {
+      "index": 56,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "200 میلی‌متر",
+      "inner_d": 163.6,
+      "C": 140.0
+    },
+    {
+      "index": 57,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "225 میلی‌متر",
+      "inner_d": 184.0,
+      "C": 140.0
+    },
+    {
+      "index": 58,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "250 میلی‌متر",
+      "inner_d": 204.6,
+      "C": 140.0
+    },
+    {
+      "index": 59,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "280 میلی‌متر",
+      "inner_d": 229.2,
+      "C": 140.0
+    },
+    {
+      "index": 60,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "315 میلی‌متر",
+      "inner_d": 257.8,
+      "C": 140.0
+    },
+    {
+      "index": 61,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "355 میلی‌متر",
+      "inner_d": 290.6,
+      "C": 140.0
+    },
+    {
+      "index": 62,
+      "material_group": "پلی اتیلن PE63\n(PN10)",
+      "size_label": "400 میلی‌متر",
+      "inner_d": 327.4,
+      "C": 140.0
+    },
+    {
+      "index": 63,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "40 میلی‌متر",
+      "inner_d": 29.0,
+      "C": 140.0
+    },
+    {
+      "index": 64,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "50 میلی‌متر",
+      "inner_d": 36.2,
+      "C": 140.0
+    },
+    {
+      "index": 65,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "63 میلی‌متر",
+      "inner_d": 45.8,
+      "C": 140.0
+    },
+    {
+      "index": 66,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "75 میلی‌متر",
+      "inner_d": 54.4,
+      "C": 140.0
+    },
+    {
+      "index": 67,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "90 میلی‌متر",
+      "inner_d": 65.4,
+      "C": 140.0
+    },
+    {
+      "index": 68,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "110 میلی‌متر",
+      "inner_d": 79.8,
+      "C": 140.0
+    },
+    {
+      "index": 69,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "125 میلی‌متر",
+      "inner_d": 90.8,
+      "C": 140.0
+    },
+    {
+      "index": 70,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "140 میلی‌متر",
+      "inner_d": 101.6,
+      "C": 140.0
+    },
+    {
+      "index": 71,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "160 میلی‌متر",
+      "inner_d": 116.2,
+      "C": 140.0
+    },
+    {
+      "index": 72,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "180 میلی‌متر",
+      "inner_d": 130.8,
+      "C": 140.0
+    },
+    {
+      "index": 73,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "200 میلی‌متر",
+      "inner_d": 145.2,
+      "C": 140.0
+    },
+    {
+      "index": 74,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "225 میلی‌متر",
+      "inner_d": 163.4,
+      "C": 140.0
+    },
+    {
+      "index": 75,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "250 میلی‌متر",
+      "inner_d": 181.6,
+      "C": 140.0
+    },
+    {
+      "index": 76,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "280 میلی‌متر",
+      "inner_d": 223.4,
+      "C": 140.0
+    },
+    {
+      "index": 77,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "315 میلی‌متر",
+      "inner_d": 229.8,
+      "C": 140.0
+    },
+    {
+      "index": 78,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "355 میلی‌متر",
+      "inner_d": 259.0,
+      "C": 140.0
+    },
+    {
+      "index": 79,
+      "material_group": "پلی اتیلن PE63\n(PN16)",
+      "size_label": "400 میلی‌متر",
+      "inner_d": 290.6,
+      "C": 140.0
+    },
+    {
+      "index": 80,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "40 میلی‌متر",
+      "inner_d": 36.2,
+      "C": 140.0
+    },
+    {
+      "index": 81,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "50 میلی‌متر",
+      "inner_d": 45.4,
+      "C": 140.0
+    },
+    {
+      "index": 82,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "63 میلی‌متر",
+      "inner_d": 57.2,
+      "C": 140.0
+    },
+    {
+      "index": 83,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "75 میلی‌متر",
+      "inner_d": 68.0,
+      "C": 140.0
+    },
+    {
+      "index": 84,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "90 میلی‌متر",
+      "inner_d": 81.5,
+      "C": 140.0
+    },
+    {
+      "index": 85,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "110 میلی‌متر",
+      "inner_d": 100.0,
+      "C": 140.0
+    },
+    {
+      "index": 86,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "125 میلی‌متر",
+      "inner_d": 113.6,
+      "C": 140.0
+    },
+    {
+      "index": 87,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "140 میلی‌متر",
+      "inner_d": 127.2,
+      "C": 140.0
+    },
+    {
+      "index": 88,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "160 میلی‌متر",
+      "inner_d": 145.4,
+      "C": 140.0
+    },
+    {
+      "index": 89,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "180 میلی‌متر",
+      "inner_d": 163.6,
+      "C": 140.0
+    },
+    {
+      "index": 90,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "200 میلی‌متر",
+      "inner_d": 181.8,
+      "C": 140.0
+    },
+    {
+      "index": 91,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "225 میلی‌متر",
+      "inner_d": 204.4,
+      "C": 140.0
+    },
+    {
+      "index": 92,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "250 میلی‌متر",
+      "inner_d": 227.2,
+      "C": 140.0
+    },
+    {
+      "index": 93,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "280 میلی‌متر",
+      "inner_d": 254.4,
+      "C": 140.0
+    },
+    {
+      "index": 94,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "315 میلی‌متر",
+      "inner_d": 286.2,
+      "C": 140.0
+    },
+    {
+      "index": 95,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "355 میلی‌متر",
+      "inner_d": 322.6,
+      "C": 140.0
+    },
+    {
+      "index": 96,
+      "material_group": "پلی اتیلن PE80\n(PN6)",
+      "size_label": "400 میلی‌متر",
+      "inner_d": 363.6,
+      "C": 140.0
+    },
+    {
+      "index": 97,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "40 میلی‌متر",
+      "inner_d": 35.2,
+      "C": 140.0
+    },
+    {
+      "index": 98,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "50 میلی‌متر",
+      "inner_d": 44.0,
+      "C": 140.0
+    },
+    {
+      "index": 99,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "63 میلی‌متر",
+      "inner_d": 55.4,
+      "C": 140.0
+    },
+    {
+      "index": 100,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "75 میلی‌متر",
+      "inner_d": 66.0,
+      "C": 140.0
+    },
+    {
+      "index": 101,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "90 میلی‌متر",
+      "inner_d": 79.2,
+      "C": 140.0
+    },
+    {
+      "index": 102,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "110 میلی‌متر",
+      "inner_d": 96.8,
+      "C": 140.0
+    },
+    {
+      "index": 103,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "125 میلی‌متر",
+      "inner_d": 110.2,
+      "C": 140.0
+    },
+    {
+      "index": 104,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "140 میلی‌متر",
+      "inner_d": 123.4,
+      "C": 140.0
+    },
+    {
+      "index": 105,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "160 میلی‌متر",
+      "inner_d": 141.0,
+      "C": 140.0
+    },
+    {
+      "index": 106,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "180 میلی‌متر",
+      "inner_d": 158.6,
+      "C": 140.0
+    },
+    {
+      "index": 107,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "200 میلی‌متر",
+      "inner_d": 176.2,
+      "C": 140.0
+    },
+    {
+      "index": 108,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "225 میلی‌متر",
+      "inner_d": 198.2,
+      "C": 140.0
+    },
+    {
+      "index": 109,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "250 میلی‌متر",
+      "inner_d": 220.4,
+      "C": 140.0
+    },
+    {
+      "index": 110,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "280 میلی‌متر",
+      "inner_d": 246.8,
+      "C": 140.0
+    },
+    {
+      "index": 111,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "315 میلی‌متر",
+      "inner_d": 277.6,
+      "C": 140.0
+    },
+    {
+      "index": 112,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "355 میلی‌متر",
+      "inner_d": 312.8,
+      "C": 140.0
+    },
+    {
+      "index": 113,
+      "material_group": "پلی اتیلن PE80\n(PN8)",
+      "size_label": "400 میلی‌متر",
+      "inner_d": 352.6,
+      "C": 140.0
+    },
+    {
+      "index": 114,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "40 میلی‌متر",
+      "inner_d": 34.0,
+      "C": 140.0
+    },
+    {
+      "index": 115,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "50 میلی‌متر",
+      "inner_d": 42.6,
+      "C": 140.0
+    },
+    {
+      "index": 116,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "63 میلی‌متر",
+      "inner_d": 53.6,
+      "C": 140.0
+    },
+    {
+      "index": 117,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "75 میلی‌متر",
+      "inner_d": 63.8,
+      "C": 140.0
+    },
+    {
+      "index": 118,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "90 میلی‌متر",
+      "inner_d": 76.6,
+      "C": 140.0
+    },
+    {
+      "index": 119,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "110 میلی‌متر",
+      "inner_d": 93.8,
+      "C": 140.0
+    },
+    {
+      "index": 120,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "125 میلی‌متر",
+      "inner_d": 106.6,
+      "C": 140.0
+    },
+    {
+      "index": 121,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "140 میلی‌متر",
+      "inner_d": 119.4,
+      "C": 140.0
+    },
+    {
+      "index": 122,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "160 میلی‌متر",
+      "inner_d": 136.4,
+      "C": 140.0
+    },
+    {
+      "index": 123,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "180 میلی‌متر",
+      "inner_d": 153.4,
+      "C": 140.0
+    },
+    {
+      "index": 124,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "200 میلی‌متر",
+      "inner_d": 170.6,
+      "C": 140.0
+    },
+    {
+      "index": 125,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "225 میلی‌متر",
+      "inner_d": 191.8,
+      "C": 140.0
+    },
+    {
+      "index": 126,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "250 میلی‌متر",
+      "inner_d": 213.2,
+      "C": 140.0
+    },
+    {
+      "index": 127,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "280 میلی‌متر",
+      "inner_d": 238.8,
+      "C": 140.0
+    },
+    {
+      "index": 128,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "315 میلی‌متر",
+      "inner_d": 268.6,
+      "C": 140.0
+    },
+    {
+      "index": 129,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "355 میلی‌متر",
+      "inner_d": 302.8,
+      "C": 140.0
+    },
+    {
+      "index": 130,
+      "material_group": "پلی اتیلن PE80\n(PN10)",
+      "size_label": "400 میلی‌متر",
+      "inner_d": 341.2,
+      "C": 140.0
+    },
+    {
+      "index": 131,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "40 میلی‌متر",
+      "inner_d": 31.0,
+      "C": 140.0
+    },
+    {
+      "index": 132,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "50 میلی‌متر",
+      "inner_d": 38.8,
+      "C": 140.0
+    },
+    {
+      "index": 133,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "63 میلی‌متر",
+      "inner_d": 48.8,
+      "C": 140.0
+    },
+    {
+      "index": 134,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "75 میلی‌متر",
+      "inner_d": 61.4,
+      "C": 140.0
+    },
+    {
+      "index": 135,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "90 میلی‌متر",
+      "inner_d": 73.5,
+      "C": 140.0
+    },
+    {
+      "index": 136,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "110 میلی‌متر",
+      "inner_d": 90.0,
+      "C": 140.0
+    },
+    {
+      "index": 137,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "125 میلی‌متر",
+      "inner_d": 102.2,
+      "C": 140.0
+    },
+    {
+      "index": 138,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "140 میلی‌متر",
+      "inner_d": 114.6,
+      "C": 140.0
+    },
+    {
+      "index": 139,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "160 میلی‌متر",
+      "inner_d": 130.8,
+      "C": 140.0
+    },
+    {
+      "index": 140,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "180 میلی‌متر",
+      "inner_d": 147.2,
+      "C": 140.0
+    },
+    {
+      "index": 141,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "200 میلی‌متر",
+      "inner_d": 163.6,
+      "C": 140.0
+    },
+    {
+      "index": 142,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "225 میلی‌متر",
+      "inner_d": 184.0,
+      "C": 140.0
+    },
+    {
+      "index": 143,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "250 میلی‌متر",
+      "inner_d": 204.6,
+      "C": 140.0
+    },
+    {
+      "index": 144,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "280 میلی‌متر",
+      "inner_d": 229.2,
+      "C": 140.0
+    },
+    {
+      "index": 145,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "315 میلی‌متر",
+      "inner_d": 257.8,
+      "C": 140.0
+    },
+    {
+      "index": 146,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "355 میلی‌متر",
+      "inner_d": 290.6,
+      "C": 140.0
+    },
+    {
+      "index": 147,
+      "material_group": "پلی اتیلن PE80\n(PN16)",
+      "size_label": "400 میلی‌متر",
+      "inner_d": 327.4,
+      "C": 140.0
+    },
+    {
+      "index": 148,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "40 میلی‌متر",
+      "inner_d": 36.2,
+      "C": 140.0
+    },
+    {
+      "index": 149,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "50 میلی‌متر",
+      "inner_d": 45.2,
+      "C": 140.0
+    },
+    {
+      "index": 150,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "63 میلی‌متر",
+      "inner_d": 57.0,
+      "C": 140.0
+    },
+    {
+      "index": 151,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "75 میلی‌متر",
+      "inner_d": 67.8,
+      "C": 140.0
+    },
+    {
+      "index": 152,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "90 میلی‌متر",
+      "inner_d": 81.4,
+      "C": 140.0
+    },
+    {
+      "index": 153,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "110 میلی‌متر",
+      "inner_d": 99.4,
+      "C": 140.0
+    },
+    {
+      "index": 154,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "125 میلی‌متر",
+      "inner_d": 113.0,
+      "C": 140.0
+    },
+    {
+      "index": 155,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "140 میلی‌متر",
+      "inner_d": 126.6,
+      "C": 140.0
+    },
+    {
+      "index": 156,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "160 میلی‌متر",
+      "inner_d": 144.6,
+      "C": 140.0
+    },
+    {
+      "index": 157,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "180 میلی‌متر",
+      "inner_d": 162.8,
+      "C": 140.0
+    },
+    {
+      "index": 158,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "200 میلی‌متر",
+      "inner_d": 180.8,
+      "C": 140.0
+    },
+    {
+      "index": 159,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "225 میلی‌متر",
+      "inner_d": 203.4,
+      "C": 140.0
+    },
+    {
+      "index": 160,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "250 میلی‌متر",
+      "inner_d": 226.2,
+      "C": 140.0
+    },
+    {
+      "index": 161,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "280 میلی‌متر",
+      "inner_d": 253.2,
+      "C": 140.0
+    },
+    {
+      "index": 162,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "315 میلی‌متر",
+      "inner_d": 285.0,
+      "C": 140.0
+    },
+    {
+      "index": 163,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "355 میلی‌متر",
+      "inner_d": 321.2,
+      "C": 140.0
+    },
+    {
+      "index": 164,
+      "material_group": "پلی اتیلن PE100\n(PN8)",
+      "size_label": "400 میلی‌متر",
+      "inner_d": 361.8,
+      "C": 140.0
+    },
+    {
+      "index": 165,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "40 میلی‌متر",
+      "inner_d": 35.2,
+      "C": 140.0
+    },
+    {
+      "index": 166,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "50 میلی‌متر",
+      "inner_d": 44.0,
+      "C": 140.0
+    },
+    {
+      "index": 167,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "63 میلی‌متر",
+      "inner_d": 55.4,
+      "C": 140.0
+    },
+    {
+      "index": 168,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "75 میلی‌متر",
+      "inner_d": 66.0,
+      "C": 140.0
+    },
+    {
+      "index": 169,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "90 میلی‌متر",
+      "inner_d": 79.2,
+      "C": 140.0
+    },
+    {
+      "index": 170,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "110 میلی‌متر",
+      "inner_d": 96.8,
+      "C": 140.0
+    },
+    {
+      "index": 171,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "125 میلی‌متر",
+      "inner_d": 110.2,
+      "C": 140.0
+    },
+    {
+      "index": 172,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "140 میلی‌متر",
+      "inner_d": 123.4,
+      "C": 140.0
+    },
+    {
+      "index": 173,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "160 میلی‌متر",
+      "inner_d": 141.0,
+      "C": 140.0
+    },
+    {
+      "index": 174,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "180 میلی‌متر",
+      "inner_d": 158.6,
+      "C": 140.0
+    },
+    {
+      "index": 175,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "200 میلی‌متر",
+      "inner_d": 176.2,
+      "C": 140.0
+    },
+    {
+      "index": 176,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "225 میلی‌متر",
+      "inner_d": 198.2,
+      "C": 140.0
+    },
+    {
+      "index": 177,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "250 میلی‌متر",
+      "inner_d": 220.4,
+      "C": 140.0
+    },
+    {
+      "index": 178,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "280 میلی‌متر",
+      "inner_d": 246.8,
+      "C": 140.0
+    },
+    {
+      "index": 179,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "315 میلی‌متر",
+      "inner_d": 277.6,
+      "C": 140.0
+    },
+    {
+      "index": 180,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "355 میلی‌متر",
+      "inner_d": 312.8,
+      "C": 140.0
+    },
+    {
+      "index": 181,
+      "material_group": "پلی اتیلن PE100\n(PN10)",
+      "size_label": "400 میلی‌متر",
+      "inner_d": 352.6,
+      "C": 140.0
+    },
+    {
+      "index": 182,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "40 میلی‌متر",
+      "inner_d": 32.6,
+      "C": 140.0
+    },
+    {
+      "index": 183,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "50 میلی‌متر",
+      "inner_d": 40.8,
+      "C": 140.0
+    },
+    {
+      "index": 184,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "63 میلی‌متر",
+      "inner_d": 51.4,
+      "C": 140.0
+    },
+    {
+      "index": 185,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "75 میلی‌متر",
+      "inner_d": 61.4,
+      "C": 140.0
+    },
+    {
+      "index": 186,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "90 میلی‌متر",
+      "inner_d": 73.6,
+      "C": 140.0
+    },
+    {
+      "index": 187,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "110 میلی‌متر",
+      "inner_d": 90.0,
+      "C": 140.0
+    },
+    {
+      "index": 188,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "125 میلی‌متر",
+      "inner_d": 102.2,
+      "C": 140.0
+    },
+    {
+      "index": 189,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "140 میلی‌متر",
+      "inner_d": 114.6,
+      "C": 140.0
+    },
+    {
+      "index": 190,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "160 میلی‌متر",
+      "inner_d": 130.8,
+      "C": 140.0
+    },
+    {
+      "index": 191,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "180 میلی‌متر",
+      "inner_d": 147.2,
+      "C": 140.0
+    },
+    {
+      "index": 192,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "200 میلی‌متر",
+      "inner_d": 163.6,
+      "C": 140.0
+    },
+    {
+      "index": 193,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "225 میلی‌متر",
+      "inner_d": 184.0,
+      "C": 140.0
+    },
+    {
+      "index": 194,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "250 میلی‌متر",
+      "inner_d": 204.6,
+      "C": 140.0
+    },
+    {
+      "index": 195,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "280 میلی‌متر",
+      "inner_d": 229.2,
+      "C": 140.0
+    },
+    {
+      "index": 196,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "315 میلی‌متر",
+      "inner_d": 257.8,
+      "C": 140.0
+    },
+    {
+      "index": 197,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "355 میلی‌متر",
+      "inner_d": 290.6,
+      "C": 140.0
+    },
+    {
+      "index": 198,
+      "material_group": "پلی اتیلن PE100\n(PN16)",
+      "size_label": "400 میلی‌متر",
+      "inner_d": 327.4,
+      "C": 140.0
+    }
+  ]
+}

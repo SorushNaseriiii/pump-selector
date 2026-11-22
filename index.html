@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1c4e80">
+  <meta name="description" content="نرم‌افزار انتخاب الکتروپمپ شرکت پمپ پارس ناصری">
+  <title>نرم‌افزار انتخاب الکتروپمپ | پمپ پارس ناصری</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./assets/css/app.css">
+  <link id="shell-style" rel="stylesheet" href="./assets/css/shell.css?v=1.0.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body dir="rtl">
+  <div id="splash">
+    <img src="./assets/img/tran_logo.png" alt="لوگوی پمپ پارس ناصری">
+  </div>
+  <div id="transition-overlay">
+    <img src="./assets/img/drop.png" alt="قطره">
+  </div>
+
+  <header class="app-header">
+    <div class="logo-container">
+      <a id="brand-home-link" href="#welcome" class="logo-link" onclick="window.App?.requestHome?.(); return false;" aria-label="بازگشت به صفحه اصلی">
+        <img src="./assets/img/logo.png" alt="لوگوی پمپ پارس ناصری">
+        <h1>نرم‌افزار انتخاب الکتروپمپ</h1>
+      </a>
+    </div>
+    <nav>
+      <a href="https://parsnasseripump.ir/about-us" target="_blank" rel="noopener">معرفی مجموعه</a>
+      <a href="#guide">راهنمای استفاده</a>
+    </nav>
+  </header>
+
+  <div id="top-bar" class="top-bar-wrapper d-print-none" hidden>
+    <div class="top-bar-side">
+      <button type="button" class="btn-back" onclick="App.goBack()">
+        <i class="bi bi-arrow-right-short"></i>
+        <span>بازگشت</span>
+      </button>
+    </div>
+    <div class="top-bar-center"></div>
+    <div class="top-bar-side"></div>
+  </div>
+
+  <main id="app-main" aria-live="polite"></main>
+
+  <footer>
+    کلیه حقوق مادی و معنوی این وبسایت متعلق به شرکت پمپ پارس ناصری© میباشد | 2026
+  </footer>
+
+  <div id="print-report"></div>
+
+  <div id="home-confirm-modal" class="home-confirm-modal" hidden role="presentation">
+    <button type="button" class="home-confirm-backdrop" aria-label="بستن پنجره" onclick="App.cancelHomeRequest()"></button>
+    <section class="home-confirm-dialog" role="alertdialog" aria-modal="true" aria-labelledby="home-confirm-title" aria-describedby="home-confirm-message">
+      <div class="home-confirm-icon"><i class="bi bi-house-door-fill" aria-hidden="true"></i></div>
+      <h2 id="home-confirm-title">بازگشت به صفحه اصلی؟</h2>
+      <p id="home-confirm-message">با بازگشت به صفحه اصلی، اطلاعات طراحی فعلی پاک می‌شود. آیا مطمئن هستید؟</p>
+      <div class="home-confirm-actions">
+        <button type="button" id="home-confirm-cancel" class="btn btn-outline-secondary" onclick="App.cancelHomeRequest()">ادامه طراحی</button>
+        <button type="button" class="btn btn-primary" onclick="App.confirmHomeRequest()">بازگشت به صفحه اصلی</button>
+      </div>
+    </section>
+  </div>
+
+  <div id="restart-confirm-modal" class="home-confirm-modal" hidden role="presentation">
+    <button type="button" class="home-confirm-backdrop" aria-label="بستن پنجره" onclick="App.cancelStartOver()"></button>
+    <section class="home-confirm-dialog" role="alertdialog" aria-modal="true" aria-labelledby="restart-confirm-title" aria-describedby="restart-confirm-message">
+      <div class="home-confirm-icon"><i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i></div>
+      <h2 id="restart-confirm-title">شروع مجدد طراحی؟</h2>
+      <p id="restart-confirm-message">با شروع مجدد، اطلاعات و انتخاب‌های فعلی پاک می‌شوند و به صفحه خوش‌آمدگویی برمی‌گردید. آیا مطمئن هستید؟</p>
+      <div class="home-confirm-actions">
+        <button type="button" id="restart-confirm-cancel" class="btn btn-outline-secondary" onclick="App.cancelStartOver()">مشاهده همین گزارش</button>
+        <button type="button" class="btn btn-primary" onclick="App.confirmStartOver()">بله، شروع مجدد</button>
+      </div>
+    </section>
+  </div>
+
+  <div id="app-alert-modal" class="app-alert-modal" hidden role="presentation">
+    <button type="button" class="app-alert-backdrop" aria-label="بستن پیام" onclick="App.closeAppAlert()"></button>
+    <section class="app-alert-dialog" role="alertdialog" aria-modal="true" aria-labelledby="app-alert-title" aria-describedby="app-alert-message">
+      <div class="app-alert-icon"><i class="bi bi-exclamation-circle-fill" aria-hidden="true"></i></div>
+      <h2 id="app-alert-title">بررسی اطلاعات</h2>
+      <p id="app-alert-message"></p>
+      <div class="app-alert-actions">
+        <button type="button" id="app-alert-ok" class="btn btn-primary" onclick="App.closeAppAlert()">متوجه شدم</button>
+      </div>
+    </section>
+  </div>
+
+  <div id="match-loading-overlay" class="match-loading-overlay" hidden role="presentation">
+    <div class="match-loading-card">
+      <img src="./assets/img/logo.png" alt="لوگوی پمپ پارس ناصری">
+      <h2>در حال محاسبه و جستجوی الکتروپمپ مناسب</h2>
+      <div class="match-loading-spinner" aria-hidden="true"></div>
+      <p>لطفاً کمی صبر کنید...</p>
+    </div>
+  </div>
+  <script type="module" src="./assets/js/app.mjs?v=1.0.0"></script>
+</body>
+</html>

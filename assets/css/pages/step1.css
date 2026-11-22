@@ -1,0 +1,98 @@
+/* --- Layout & Form Styles --- */
+    .content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin: 40px 0;
+      padding: 0 20px;
+    }
+
+    .form-section {
+      flex: 1;
+      min-width: 320px;
+      max-width: 450px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: right;
+    }
+
+    /* --- Diagram Styles --- */
+    .diagram-box {
+      flex: 1.2;
+      min-width: 320px;
+      max-width: 500px;
+      background: #fff;
+      padding: 0;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      overflow: hidden;
+      box-shadow: inset 0 0 20px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: center;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      max-height: 550px;
+      display: block;
+    }
+
+    /* Animated Elements Transitions */
+    #svg-water, #svg-drawdown {
+      transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    #svg-casing, #svg-void, #svg-cap {
+      transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    #svg-pump-group {
+      transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    #svg-static-group, #svg-dynamic-group {
+      transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    /* SVG Text Styles */
+    .svg-label {
+      font-family: 'Vazirmatn', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      text-shadow: 0 1px 3px rgba(255,255,255,1);
+      cursor: default;
+    }
+    .level-text { font-size: 14px; font-weight: 800; }
+    .level-line { stroke-width: 2; stroke-dasharray: 6, 4; }
+
+    /* Form Specifics */
+    label {
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: #1c4e80;
+      display: block;
+    }
+
+    .var-symbol {
+      color: #666;
+      font-family: 'Times New Roman', serif;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 1.1em;
+      margin-right: 5px;
+    }
+
+    .input-group { direction: ltr; }
+    .form-control { text-align: left; font-weight: 600; }
+
+    .unit-label {
+      background-color: #f8f9fa;
+      color: #555;
+      font-weight: bold;
+      min-width: 45px;
+      text-align: center;
+    }
+
+    .btn-next { width: 100%; padding: 12px; margin-top: 20px; font-weight: bold; }

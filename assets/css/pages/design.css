@@ -1,0 +1,28 @@
+/* --- SCALE & ZOOM FIX --- */
+    html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; }
+    body {
+        background: #e3f0ff;
+        zoom: 90%;
+        -moz-transform: scale(0.9);
+        -moz-transform-origin: top center;
+        display: flex;
+        flex-direction: column;
+    }
+    main { flex: 1; display: flex; align-items: center; justify-content: center; }
+
+    .design-card {
+        max-width: 550px;
+        width: 100%;
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        overflow: hidden;
+        direction: rtl;
+        text-align: right;
+    }
+    .card-header { background: #f8f9fa; padding: 25px; border-bottom: 1px solid #eee; }
+    .input-group-text { min-width: 80px; justify-content: center; }
+
+    @media (max-width: 768px) {
+        body, html { overflow: auto; zoom: 100%; -moz-transform: scale(1); }
+    }

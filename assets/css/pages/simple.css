@@ -1,0 +1,120 @@
+/* Simple input page: preserve the original light card style while fitting the viewport. */
+.form-control {
+  background-color: #ffffff !important;
+  color: #212529 !important;
+  border: 1px solid #ced4da;
+}
+
+body[data-page="simple"] {
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body[data-page="simple"] #app-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  padding: 6px 0;
+  overflow: hidden;
+}
+
+.mobile-scroll-fix {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.input-card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  direction: rtl;
+  text-align: right;
+  border: none;
+}
+
+.input-card .card-header {
+  background: #f8f9fa;
+  padding: 22px 25px;
+  border-bottom: 1px solid #eee;
+  color: #1c4e80;
+}
+
+.input-card .input-group-text {
+  min-width: 75px;
+  justify-content: center;
+}
+
+.input-card .card-body { padding: 1.25rem !important; }
+.input-card .mb-4 { margin-bottom: 1rem !important; }
+.input-card .alert { margin-bottom: 1rem !important; }
+.input-card .btn-lg { padding-top: .65rem !important; padding-bottom: .65rem !important; }
+
+/* Same native number input as /step1, with equal unit columns. */
+.input-card .simple-numeric-group {
+  direction: rtl;
+  flex-wrap: nowrap;
+}
+.input-card .simple-numeric-group > .simple-unit {
+  flex: 0 0 90px;
+  width: 90px;
+  min-width: 90px;
+  max-width: 90px;
+  color: #555;
+  background-color: #f8f9fa;
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+}
+.input-card .simple-numeric-group > select.simple-unit {
+  cursor: pointer;
+}
+.input-card .simple-numeric-group > .simple-number {
+  min-width: 0;
+  direction: rtl; /* Native spinner on the left, opposite the unit. */
+  text-align: center;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  appearance: auto;
+}
+.input-card .simple-numeric-group > .simple-number:focus {
+  border-color: #86b7fe !important;
+  box-shadow: 0 0 0 .25rem rgba(13,110,253,.25) !important;
+}
+
+@media (max-height: 720px) and (min-width: 769px) {
+  body[data-page="simple"] { zoom: 82%; }
+}
+
+@media (max-width: 768px) {
+  body[data-page="simple"] {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+  body[data-page="simple"] #app-main {
+    align-items: flex-start;
+    overflow: visible;
+    padding: 10px 0;
+  }
+  .mobile-scroll-fix {
+    flex: 0 0 auto;
+    align-items: flex-start;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .input-card { border-radius: 15px; margin: 6px 10px; }
+  .input-card .card-header { padding: 18px 20px; }
+  .input-card .card-body { padding: 18px !important; }
+}

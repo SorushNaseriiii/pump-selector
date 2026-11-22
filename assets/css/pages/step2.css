@@ -1,0 +1,37 @@
+/* استایل‌های پایه */
+  .form-section { width: 100%; max-width: 1200px; margin: 40px auto; text-align: right; }
+  .form-box { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 24px; border: 1px solid #e0e0e0; }
+  .form-box h3 { font-size: 1.3rem; margin-bottom: 24px; color: #1c4e80; text-align: right; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
+
+  /* گرید جدول لوله‌ها */
+  .pipe-row, .pipe-row-header {
+    display: grid;
+    grid-template-columns: 40px 1.2fr 1fr 0.8fr 0.8fr 0.8fr 0.8fr 40px;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .pipe-row { margin-bottom: 10px; background: #fff; padding: 10px; border-bottom: 1px solid #f0f0f0; }
+  .pipe-row:hover { background-color: #f9fcff; }
+  .pipe-row.static-row { background-color: #e3f2fd; border-radius: 8px; border: 1px solid #bbdefb; }
+
+  .pipe-row-header {
+    font-weight: bold; color: #1c4e80; font-size: 0.8rem;
+    padding: 10px; background: #f8f9fa; border-radius: 8px 8px 0 0; border-bottom: 2px solid #dee2e6;
+  }
+
+  input, select { width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 6px; font-size: 0.9rem; text-align: center; }
+  select { text-align: right; }
+  input[readonly] { background-color: #f1f3f5; color: #555; cursor: default; }
+  .calc-field { background-color: #e8f5e9 !important; color: #198754 !important; font-weight: bold; border-color: #c3e6cb; }
+
+  .row-number { text-align: center; font-weight: bold; color: #fff; background: #555; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; margin: 0 auto; }
+  .btn-delete { color: #dc3545; background: #fff; border: 1px solid #dc3545; border-radius: 6px; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+  .btn-add { background-color: #198754; color: #fff; border: none; padding: 10px 20px; font-size: 0.95rem; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
+  .btn-next { background-color: #0d6efd; color: #fff; border: none; padding: 14px 40px; font-size: 1.1rem; border-radius: 10px; cursor: pointer; display: block; margin: 30px auto 0; font-weight: bold; }
+
+  /* استایل مودال */
+  .custom-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); align-items: center; justify-content: center; }
+  .modal-content { background-color: #fff; padding: 30px; border-radius: 12px; width: 90%; max-width: 500px; text-align: right; }
+
+  .pipe-badge { font-size: 0.75rem; background: #1c4e80; color: #fff; padding: 2px 8px; border-radius: 10px; white-space: nowrap; }
