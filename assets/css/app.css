@@ -191,6 +191,9 @@ body[data-page="step1"] .content-wrapper { width:100%; }
   .result-actions .btn { width:100%; }
   .pipe-row,.pipe-row-header { min-width:960px; }
 }
+/* Company identity is shown only in the printable report. */
+.result-print-brand { display: none; }
+
 @media print {
   @page { size: A4; margin: 9mm; }
   html, body {
@@ -244,6 +247,66 @@ body[data-page="step1"] .content-wrapper { width:100%; }
     background: #fff !important;
     overflow: visible !important;
     box-shadow: none !important;
+  }
+  body[data-page="result"] #print-report .result-print-brand {
+    display: flex !important;
+    direction: rtl !important;
+    align-items: center !important;
+    gap: 11px !important;
+    width: 100% !important;
+    min-height: 24mm !important;
+    padding: 7px 13px 8px !important;
+    margin: 0 !important;
+    background: linear-gradient(105deg, #f8fbfd, #edf5fa) !important;
+    border-bottom: 1px solid #d7e4ed !important;
+  }
+  body[data-page="result"] #print-report .result-print-brand > img {
+    display: block !important;
+    flex: 0 0 39mm !important;
+    width: 39mm !important;
+    max-width: 39mm !important;
+    height: auto !important;
+    max-height: 13mm !important;
+    object-fit: contain !important;
+  }
+  body[data-page="result"] #print-report .result-print-brand-copy {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    flex-direction: column !important;
+    min-width: 0 !important;
+    gap: 2px !important;
+    text-align: right !important;
+  }
+  body[data-page="result"] #print-report .result-print-brand-copy > strong {
+    color: #1c4e80 !important;
+    font-size: 11px !important;
+    font-weight: 900 !important;
+    line-height: 1.4 !important;
+  }
+  body[data-page="result"] #print-report .result-print-brand-copy > span {
+    color: #4e687b !important;
+    font-size: 8.5px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+  }
+  body[data-page="result"] #print-report .result-print-brand-copy > p {
+    margin: 2px 0 0 !important;
+    color: #637787 !important;
+    font-size: 7.6px !important;
+    font-weight: 400 !important;
+    line-height: 1.55 !important;
+  }
+  body[data-page="result"] #print-report .result-print-brand-label {
+    flex: 0 0 auto !important;
+    align-self: flex-start !important;
+    padding: 4px 8px !important;
+    border: 1px solid #c8d9e5 !important;
+    border-radius: 5px !important;
+    color: #1c4e80 !important;
+    background: #fff !important;
+    font-size: 8px !important;
+    font-weight: 800 !important;
+    white-space: nowrap !important;
   }
   body[data-page="result"] #print-report .result-header {
     display: flex !important;

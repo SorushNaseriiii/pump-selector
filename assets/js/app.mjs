@@ -1623,6 +1623,15 @@ function renderResult(includeActions = true) {
   return `
     <div class="result-main container-fluid">
       <article class="result-card shadow-lg">
+        <div class="result-print-brand" aria-label="سربرگ گزارش پمپ پارس ناصری">
+          <img src="./assets/img/logo.png" alt="لوگوی پمپ پارس ناصری">
+          <div class="result-print-brand-copy">
+            <strong>پمپ پارس ناصری</strong>
+            <span>سامانه تخصصی انتخاب الکتروپمپ شناور</span>
+            <p>این گزارش بر پایه اطلاعات ثبت‌شده در فرآیند طراحی تهیه شده و خلاصه نقطه کار سیستم، مشخصات الکتروپمپ و کابل پیشنهادی را ارائه می‌کند؛ در طراحی پیشرفته، جزئیات مسیر لوله‌کشی نیز درج شده است.</p>
+          </div>
+          <span class="result-print-brand-label">گزارش فنی</span>
+        </div>
         <header class="result-header">
           <div>
             <span class="result-kicker">PUMP PARS NASERI · TECHNICAL REPORT</span>
