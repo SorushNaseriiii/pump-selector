@@ -1562,7 +1562,7 @@ function submitCable(event) {
   setPage("result");
 }
 
-function renderResult() {
+function renderResult(includeActions = true) {
   const fittings = Array.isArray(state.fittingsData) ? state.fittingsData : [];
   const isAdvanced = state.mode === "advanced";
   const bundleCount = cableBundleCount();
@@ -1668,190 +1668,16 @@ function renderResult() {
 
         ${hydraulicHtml}
 
-        <div class="result-actions d-print-none">
+        ${includeActions ? `<div class="result-actions d-print-none">
           <button type="button" class="btn btn-success btn-lg" onclick="App.printReport()"><i class="bi bi-file-earmark-pdf-fill ms-2"></i> دریافت فایل PDF گزارش</button>
           <button type="button" id="result-start-over-button" class="btn btn-outline-primary btn-lg" onclick="App.startOver()">شروع مجدد</button>
-        </div>
+        </div>` : ""}
       </article>
     </div>`;
 }
 
 function renderPrintReport() {
-  const pump = getPumpDetails(state.selectedModel, pumpRecords);
-  const isAdvanced = state.mode === "advanced";
-  const fittings = Array.isArray(state.fittingsData) ? state.fittingsData : [];
-  const productUrl = pump.product_url || "https://parsnasseripump.com/product-category/%D9%BE%D9%85%D9%BE-%D9%87%D8%A7%DB%8C-%D8%B4%D9%86%D8%A7%D9%88%D8%B1";
-  const pumpName = state.pumpDetails?.showing_name || pump.showing_name || state.selectedModel || "---";
-  const cableSize = state.selectedCable ?? "---";
-  const cableCount = cableBundleCount();
-  const cableDesignation = cableSize !== "---" && cableSize !== "یافت نشد"
-    ? `${cableCount} × 3C × ${cableSize} mm²`
-    : cableNotation();
-  const fmt = (value, digits = 1) => {
-    if (value === null || value === undefined || value === "" || !Number.isFinite(Number(value))) return "—";
-    return Number(value).toLocaleString("en-US", { maximumFractionDigits: digits });
-  };
-  const withUnit = (value, unit, digits = 1) => `<bdi dir="ltr">${esc(fmt(value, digits))} ${unit}</bdi>`;
-  const line = (title, value, extraClass = "") => `
-    <div class="report-detail-row ${extraClass}"><span>${title}</span><strong>${value}</strong></div>`;
-  const date = new Date().toLocaleDateString("fa-IR");
-  const cableBasis = isAdvanced
-    ? "فاصله تابلو تا دهانه چاه + عمق نصب الکتروپمپ"
-    : "در طراحی سریع، عمق نصب ثبت نمی‌شود؛ طول محاسباتی بر اساس فاصله واردشده تا دهانه چاه است.";
-  const foot = `<footer class="report-page-footer"><span>پمپ پارس ناصری | گزارش فنی انتخاب الکتروپمپ</span><span dir="ltr">PUMP PARS NASERI</span></footer>`;
-
-  const pipingMarkup = `
-        <div class="report-section-title report-piping-title"><span class="report-section-index">۰۵</span><h2>جزئیات خط لوله و افت مسیر</h2><span>PIPELINE DATA</span></div>
-        <table class="report-piping-table">
-          <thead><tr><th>ردیف</th><th>جنس لوله</th><th>سایز</th><th>طول (m)</th><th>اختلاف ارتفاع (m)</th><th>سرعت (m/s)</th><th>هد (m)</th></tr></thead>
-          <tbody>${fittings.length ? fittings.map((segment, i) => `
-            <tr><td>${i + 1}</td><td>${esc(segment.name || "—")}</td><td><bdi dir="ltr">${esc(formatPipeSize(segment.size))}</bdi></td><td>${esc(fmt(segment.quantity, 2))}</td><td>${esc(fmt(segment.z_height, 2))}</td><td>${esc(fmt(segment.velocity, 2))}</td><td>${esc(fmt(fittingHeadValue(segment), 2))}</td></tr>`).join("") : `<tr><td colspan="7">جزئیات مسیر لوله‌کشی ثبت نشده است.</td></tr>`}</tbody>
-          <tfoot><tr><th colspan="6">مجموع هد مسیر و افت‌های ثبت‌شده</th><td><bdi dir="ltr">${esc(fmt(state.totalPipeHead, 2))} m</bdi></td></tr></tfoot>
-        </table>
-  `;
-
-  return `
-    <article class="report-body ${isAdvanced ? "report-has-well" : "report-quick"}">
-      <section class="report-sheet report-summary-sheet">
-        <header class="report-masthead">
-          <div class="report-brand"><img src="./assets/img/logo.png" alt="پمپ پارس ناصری"><span>پمپ پارس ناصری<small>نرم‌افزار انتخاب الکتروپمپ</small></span></div>
-          <div class="report-document-mark"><span>گزارش فنی انتخاب</span><b dir="ltr">TECHNICAL SELECTION REPORT</b></div>
-        </header>
-
-        <div class="report-heading-row">
-          <div><span class="report-eyebrow">خلاصه نهایی سیستم</span><h1>گزارش انتخاب الکتروپمپ شناور</h1><p>مشخصات نقطه کار، الکتروپمپ انتخابی و کابل تغذیه</p></div>
-          <div class="report-date"><span>تاریخ تهیه گزارش</span><strong>${esc(date)}</strong><small>${isAdvanced ? "طراحی پیشرفته" : "طراحی سریع"}</small></div>
-        </div>
-
-        <section class="report-section" aria-label="نقطه کار طراحی">
-          <div class="report-section-title"><span class="report-section-index">۰۱</span><h2>نقطه کار طراحی</h2><span>DESIGN DUTY</span></div>
-          <div class="report-kpi-grid">
-            <div class="report-kpi"><span>دبی موردنیاز سیستم</span><strong>${withUnit(state.final_q, "m³/h", 2)}</strong><small>Q — Design Flow</small></div>
-            <div class="report-kpi"><span>هد کل موردنیاز</span><strong>${withUnit(state.final_h, "m", 2)}</strong><small>H — Design Head</small></div>
-            <div class="report-kpi report-kpi-accent"><span>راندمان در نقطه انتخاب</span><strong>${withUnit(state.pumpEfficiency, "%", 1)}</strong><small>η — Operating Efficiency</small></div>
-          </div>
-        </section>
-
-        <section class="report-section" aria-label="الکتروپمپ انتخابی">
-          <div class="report-section-title"><span class="report-section-index">۰۲</span><h2>الکتروپمپ انتخاب‌شده</h2><span>SELECTED PUMP</span></div>
-          <div class="report-pump-panel">
-            <div class="report-pump-name"><span>مدل انتخابی</span><strong dir="auto">${esc(pumpName)}</strong><a href="${esc(productUrl)}" rel="noopener noreferrer">${pump.product_url ? "مشاهده مشخصات مدل در وب‌سایت شرکت" : "مشاهده فهرست محصولات شرکت"} ↗</a></div>
-            <div class="report-pump-properties">
-              ${line("توان نامی موتور", withUnit(state.motorPower, "kW", 2))}
-              ${line("راندمان در نقطه کار", withUnit(state.pumpEfficiency, "%", 1))}
-              ${line("مدل موتور", `<bdi dir="ltr">${esc(pump.motor_model || "—")}</bdi>`)}
-            </div>
-          </div>
-        </section>
-
-        <section class="report-section" aria-label="کابل انتخابی">
-          <div class="report-section-title"><span class="report-section-index">۰۳</span><h2>مشخصات کابل پیشنهادی</h2><span>ELECTRICAL CABLE</span></div>
-          <div class="report-cable-panel">
-            <div class="report-cable-prominent"><span>آرایش کابل تخت شناور</span><strong dir="ltr">${esc(cableDesignation)}</strong><small>${cableCount === 2 ? "دو مسیر کابل سه‌رشته‌ای" : "یک مسیر کابل سه‌رشته‌ای"}</small></div>
-            <div class="report-cable-properties">
-              ${line("روش راه‌اندازی", esc(state.startMethod || "—"))}
-              ${line("فاصله تابلو تا دهانه چاه", withUnit(state.panelDistance, "m"))}
-              ${line("طول محاسباتی کابل", withUnit(state.totalLengthCalc, "m"))}
-              ${line("نوع کابل", "تخت شناور (Flat)")}
-            </div>
-          </div>
-          <div class="report-method-note"><strong>مبنای محاسبه طول کابل</strong><span>${cableBasis}</span></div>
-        </section>
-        ${!isAdvanced ? `<p class="report-quick-note">این گزارش بر اساس ورودی‌های طراحی سریع تهیه شده است؛ مشخصات چاه و لوله‌کشی در این روش وارد نشده‌اند.</p>` : ""}
-        ${foot}
-      </section>
-
-      ${isAdvanced ? `
-      <section class="report-sheet report-hydraulic-sheet">
-        <div class="report-secondary-header"><div><span class="report-eyebrow">جزئیات فنی مسیر هیدرولیکی</span><h2>مشخصات چاه و مسیر انتقال</h2></div><span dir="ltr">WELL & PIPING DETAILS</span></div>
-        <div class="report-section-title"><span class="report-section-index">۰۴</span><h2>چاه و موقعیت نصب الکتروپمپ</h2><span>WELL INSTALLATION</span></div>
-        <div class="report-well-grid">
-          <div class="report-well-figure">
-            ${reportSchematic()}
-            <p>نمای شماتیک عمق‌ها به نسبت داده‌های ورودی رسم شده است؛ قطر و ابعاد تجهیزات نمایشی‌اند.</p>
-          </div>
-          <div class="report-well-properties">
-            ${line("عمق سطح استاتیک (Hs)", withUnit(state.static_level, "m"))}
-            ${line("عمق سطح دینامیک (Hd)", withUnit(state.dynamic_level, "m"))}
-            ${line("عمق نصب پمپ (Di)", withUnit(state.install_depth, "m"))}
-            ${line("قطر دهانه چاه", withUnit(state.diameter_inch, "in"))}
-            ${line("فاصله نصب زیر سطح دینامیک", withUnit(Number(state.install_depth) - Number(state.dynamic_level), "m"))}
-            <div class="report-well-legend">
-              <span><i class="report-legend-static"></i> سطح استاتیک</span>
-              <span><i class="report-legend-dynamic"></i> سطح دینامیک</span>
-              <span><i class="report-legend-install"></i> محل نصب پمپ</span>
-            </div>
-          </div>
-        </div>
-
-        ${fittings.length <= 7 ? pipingMarkup : ""}
-        ${foot}
-      </section>
-      ${fittings.length > 7 ? `
-      <section class="report-sheet report-piping-sheet">
-        <div class="report-secondary-header"><div><span class="report-eyebrow">جزئیات خط لوله و افت‌های ثبت‌شده</span><h2>گزارش مسیر انتقال</h2></div><span dir="ltr">PIPELINE DETAILS</span></div>
-        ${pipingMarkup}
-        ${foot}
-      </section>` : ""}` : ""}
-    </article>`;
-}
-
-function reportSchematic() {
-  const staticM = Math.max(0, toFloat(state.static_level));
-  const dynamicM = Math.max(staticM, toFloat(state.dynamic_level));
-  const installM = Math.max(dynamicM, toFloat(state.install_depth));
-  const maxDepth = Math.max(installM, 1);
-  const yGround = 54;
-  const depthScale = 224 / maxDepth;
-  const yStatic = yGround + staticM * depthScale;
-  const yDynamic = yGround + dynamicM * depthScale;
-  const yPump = yGround + installM * depthScale;
-  const waterHeight = Math.max(0, 380 - yDynamic);
-  const drawdownHeight = Math.max(0, yDynamic - yStatic);
-  const diameterInch = Math.max(1, Math.min(12, toFloat(state.diameter_inch) || 6));
-  const wellWidth = 62 + (diameterInch - 1) * 1.25;
-  const wellX = 190 - wellWidth / 2;
-  const coreX = wellX + 6;
-  const coreWidth = wellWidth - 12;
-  return `
-    <svg class="report-well-svg" viewBox="0 0 380 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="برش شماتیک چاه: سطح استاتیک، سطح دینامیک، الکتروپمپ شناور و لوله خروجی">
-      <defs>
-        <linearGradient id="printEarth" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7efe4"/><stop offset="1" stop-color="#e8d9c7"/></linearGradient>
-        <linearGradient id="printWater" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9e5f7"/><stop offset="1" stop-color="#58bbda"/></linearGradient>
-        <linearGradient id="printMetal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#829aa9"/><stop offset=".48" stop-color="#f0f6fa"/><stop offset="1" stop-color="#728c9d"/></linearGradient>
-      </defs>
-      <rect x="14" y="${yGround}" width="352" height="326" rx="3" fill="url(#printEarth)"/>
-      <path d="M14 122 H${wellX-7} M${wellX+wellWidth+7} 122 H366 M14 204 H${wellX-7} M${wellX+wellWidth+7} 204 H366 M14 284 H${wellX-7} M${wellX+wellWidth+7} 284 H366" stroke="#cbb9a1" stroke-width="1" stroke-dasharray="4 8" opacity=".6"/>
-      <path d="M14 ${yGround} H366" stroke="#79644d" stroke-width="4"/>
-      <rect x="${wellX}" y="${yGround}" width="${wellWidth}" height="326" fill="#9daeb5"/>
-      <rect x="${coreX}" y="${yGround}" width="${coreWidth}" height="326" fill="#293e4c"/>
-      <rect x="${coreX}" y="${yStatic}" width="${coreWidth}" height="${drawdownHeight}" fill="#c8eafa" opacity=".6"/>
-      <rect x="${coreX}" y="${yDynamic}" width="${coreWidth}" height="${waterHeight}" fill="url(#printWater)"/>
-      <path d="M${coreX} ${yDynamic + 5} q ${coreWidth/4} -6 ${coreWidth/2} 0 t ${coreWidth/2} 0" stroke="#ffffff" stroke-width="2" fill="none" opacity=".85"/>
-      <path d="M${wellX} ${yGround} V380 M${wellX+wellWidth} ${yGround} V380" stroke="#738996" stroke-width="3"/>
-      <path d="M190 ${yPump+7} V36 Q190 29 198 29 H360" fill="none" stroke="#536a7b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M190 ${yPump+7} V36 Q190 29 198 29 H360" fill="none" stroke="url(#printMetal)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M203 ${yPump+63} V55" stroke="#263642" stroke-width="2" fill="none"/>
-      <g transform="translate(190 ${yPump})">
-        <path d="M-15 0 L15 0 L12 10 L-12 10 Z" fill="#466477"/>
-        <rect x="-15" y="10" width="30" height="26" rx="3" fill="url(#printMetal)" stroke="#3a5568" stroke-width="1.5"/>
-        <path d="M-13 18 H13 M-13 26 H13" stroke="#607d8a"/>
-        <rect x="-12" y="36" width="24" height="12" fill="#233846"/>
-        <path d="M-12 40 H12 M-12 44 H12" stroke="#74919e"/>
-        <rect x="-15" y="48" width="30" height="26" rx="3" fill="#344e5d" stroke="#263946"/>
-        <path d="M-15 57 H15 M-15 65 H15" stroke="#9cb3bd"/>
-      </g>
-      <path d="M${wellX-8} 49 H${wellX+wellWidth+8}" stroke="#4d6473" stroke-width="9" stroke-linecap="round"/>
-      <path d="M45 ${yStatic} H${wellX-8}" stroke="#3779bd" stroke-width="2.5" stroke-dasharray="6 4"/>
-      <circle cx="44" cy="${yStatic}" r="5.2" fill="#3779bd" stroke="#fff" stroke-width="1.5"/>
-      <path d="M${wellX+wellWidth+8} ${yDynamic} H329" stroke="#1892aa" stroke-width="2.5" stroke-dasharray="6 4"/>
-      <circle cx="330" cy="${yDynamic}" r="5.2" fill="#1892aa" stroke="#fff" stroke-width="1.5"/>
-      <path d="M${wellX+wellWidth+9} ${yPump} H340" stroke="#ce7450" stroke-width="2.5" stroke-dasharray="4 4"/>
-      <circle cx="340" cy="${yPump}" r="5.2" fill="#ce7450" stroke="#fff" stroke-width="1.5"/>
-      <path d="M15 12 H74" stroke="#738b9c" stroke-width="1.2"/>
-      <text x="16" y="9" direction="ltr" unicode-bidi="bidi-override" font-size="11" fill="#3b5970" font-weight="700">0 m</text>
-      <path d="M352 14 L362 24 L352 34" fill="none" stroke="#3b5970" stroke-width="2"/>
-    </svg>`;
+  return renderResult(false);
 }
 
 function printReport() {
